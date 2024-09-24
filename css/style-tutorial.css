@@ -1,0 +1,69 @@
+/*
+    this is a comment in .css file
+*/
+
+body{
+    background-color: bisque;
+}
+
+#primary-heading{
+    color: blue;
+    border: 10px solid red;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 50px;
+}
+
+.heading-group{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*  input[type="checkbox"] {...}    */
+
+/* Advanced selectors: based on relationship of html elements in the DOM structure (a tree)
+a) Immediate child    div > p {...}    (read as p which is an immediate child of div)
+b) Any child    div p {...}    (read as select paragraph by id p that is some descendant of div)
+c) Adjacent siblings    div + p {...}    (read as select a paragraph tag identified by p whose immediate sibling is a tag identified by div)
+d) Any siblings     div ~ p {...}   (read as select paragraph as long as any of its siblings is div)  */
+
+/* Precedence: 
+browser default 
+<- ext stylesheet (link <--- css) 
+<- int. stylesheet (html element <style> => <head>) 
+<- inline styling (html attribute style) */
+
+/* CSS Box Model
+1. Content
+2. Padding
+3. Border
+4. Margin 
+Total width: div => width (content + padding + border + margin)
+Padding is inner separation and margin is outer separation */
+
+/* 
+padding: 0; applies to all sides
+padding: 1px 2px; applies to y axis and x axis
+padding: 1px 2px 3px; applies to top, x axis and bottom
+padding: 1px 2px 3px 4px; applies to top, right, bottom, left
+padding-left: 2px;
+*/
+
+/*
+border: 1px solid red; is thickness, style, color.
+border-radius: 5; -> curves the edges of your border
+*/
+
+/*
+How to center a div (html element):
+1.  display: block;
+    margin: 0 auto;
+2.  display: flex;   (flexibility is controlled by the browser and how many elements are there)
+    justify-content: center;     (controls horizontal aspect of layout/display)
+    align-items: center;    (controls vertical aspect of layout/display)
+    flex-direction: rpw/ column/ row-reverse/ column-reverse;
+*/

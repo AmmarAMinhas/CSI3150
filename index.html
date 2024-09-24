@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oniichan</title>
+    <!--Link any outside files like CSS or JS or external API CDN links-->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+    <!-- <script src="../js/script.js"></script> -->
+
+    <!-- internal styling-->
+    <!-- <style>
+      
+    </style> -->
+
+
+    <!-- external styling -->
+     <link rel="stylesheet" href="./css/style-tutorial.css">
+
+
+  </head>
+  <body>
+    <header>
+      <!--Division of the title-->
+      <div>
+        <h1 id="primary-heading" class="heading-group">Title</h1>
+        <h2 class="heading-group">This is my subtitle</h2>
+      </div>
+    </header>
+   
+<!-- navigation menu -->
+ <nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#menu-item-about">About</a></li>
+    <li><a href="./html/semantic-html-example.html">Products</a></li>
+    <li>Contact</li>
+  </ul>
+ </nav>
+   <main>
+
+  <!-- practice for webb wireframing  -->
+   <section class="new-events">
+    <div class="section-title">
+      <h3 class="section-title">News Events</h3>      <!-- we have to follow hierarchy and do h1 h2 h3, we cant do h1 h2 then h5-->
+    </div>
+    <div class="media-wrapper">
+      <div class="news-container">
+        <div class="news-media">
+          <img src="./assets/img/yas.jpg" alt="" class="news-images">
+        </div>
+        <div class="news-text">
+          <a href="http://www.oakland.edu"><h3>news title here</h3></a>
+        </div>
+      </div>
+      <div class="news-container"></div>
+      <div class="news-media">
+        <img src="./assets/img/yas.jpg" alt="" class="news-images">
+      </div>
+      <div class="news-text">
+        <a href="http://www.oakland.edu"><h3>news title here</h3></a>
+      </div>
+      </div>
+      <div class="news-container"></div>
+      <div class="news-media">
+        <img src="./assets/img/yas.jpg" alt="" class="news-images">
+      </div>
+      <div class="news-text">
+        <a href="http://www.oakland.edu"><h3>news title here</h3></a>
+      </div>
+      </div>
+      <div class="news-container"></div>
+        <div class="news-media">
+          <img src="./assets/img/yas.jpg" alt="" class="news-images">
+        </div>
+        <div class="news-text">
+          <a href="http://www.oakland.edu"><h3>news title here</h3></a>
+        </div>
+      </div>
+    </div>
+
+
+   </section>
+
+      <!--Division of overview para-->
+    <div>
+      <h3>Overview</h3>
+      <span>This is a statement inside an inline tag</span>
+      <span>This is a 2nd statement inside inline tag</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia optio excepturi dignissimos illum ad earum culpa cum vitae. Blanditiis suscipit commodi ut! Laudantium similique molestiae dignissimos architecto quidem non.</p>
+    </div>
+
+    <!--Divison of significance para-->
+    <div class="container-element">
+      <h3>Significance</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores doloribus ducimus voluptates, nam minus velit odit dolor aperiam impedit, molestias quos reiciendis veritatis iste excepturi alias illo corporis veniam?</p>
+    </div>
+
+    <!-- image embedding, hyper referncing, lists, multimedia files, table data-->
+    <!-- html attributes - id, class, src, href, alt -->
+    <!-- insert an img in the html document -->
+    <div>
+        <!-- self closing html tagss-->
+        <!-- <img src="./assets/img/yas.jpg"
+        alt="this is an image of a YAAAS"
+        width="300px" height="300px"
+        /> -->
+
+      <hr/>
+      <br/>
+
+      <!-- html lists: 1.orderedlist 2.unordered list -->
+      <!-- ordered list -->
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere vitae aut debitis voluptates consectetur tenetur, similique quibusdam eum reiciendis perspiciatis odio, magni aspernatur asperiores minus, cumque voluptate a impedit!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, accusamus magni quasi minus libero ea dolorem ad tempore natus, eos eveniet nulla repellat. Asperiores neque qui obcaecati laboriosam eum aut?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nesciunt alias quos exercitationem nobis beatae ut doloribus aliquam, consequuntur recusandae veniam voluptatibus modi quas. Sed aliquid esse aperiam animi similique!</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit ad ipsum qui, amet est facilis perferendis id sit ipsa repudiandae, sed, nesciunt totam consequatur! Numquam culpa quia reprehenderit necessitatibus!</li>
+      </ol>
+
+      <br/> <hr/>
+      
+      <!-- About menu item should navigate to this unordered list -->
+      <ul id="menu-item-about">
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+      </ul>
+
+      <br/> <hr/>
+
+      <!--hyper referencing using anchor tags-->
+      <a href="http://www.oakland.edu">Click here</a><span>to visit oakland university home page</span>
+      <a href="mailto:minhas@oakland.edu">Email myself</a>
+
+    </div>
+
+    <hr>
+    <br>
+
+    <!-- multimedia files audio and video -->
+     <audio src="./assets/audio/file example MP3 2MG.mp3" controls>
+      <!-- <source src=""> <source> -->
+      Your browser does not support the audio format
+     </audio>
+
+     <video src="./assets/video/file example MOV 1280 1 4MB.3gp" 
+      width="200"
+      height="200"
+      controls>
+      Your browser does not support the video format
+     </video>
+
+     <hr> <br>
+
+     <!-- to create tabular content-->
+      <table border="10">
+        <thead>
+          <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>GPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Wick</td>
+            <td>3.79</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>3.89</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>GPA Avg</td>
+            <td></td>
+            <td>3.84</td>
+          </tr>
+        </tfoot>
+      </table>
+
+
+    <!-- IMPORTANT section  -->
+    <!-- getting input from users  -->
+    <!-- html forms > input fields -->
+
+
+    <!-- form elem -->
+     <form action="#" method="get">
+      <!-- fields to take input -->
+       <label for="user-email">Enter your Email:</label>
+       <input placeholder="abc@gmail.com" type="email" name="" id="user-email" />
+       <br/>
+       <label for="user-password">Enter your Password:</label>
+       <input type="password" name="" id="user-password" />
+       <br/>
+       <input type="checkbox" name="" value="Coffee" id="test-checkbx" />
+       <label for="test-checkbx">Coffee</label>
+       <br/>
+       <button type="submit">submit</button>
+       <!-- <button type="reset"></button> -->
+     </form>
+
+
+
+     <section class="input-tutorials">
+      <!--tutorial for radio btns-->
+      <!--present multiple option, user selects only one-->
+      <!-- the name attirbutes for all radio options are same, value and id is different-->
+      <p>Select your favorite pet...</p>
+      <input type="radio" name="pet" id="cats" value="cats">
+      <label for="cats">Cats</label> <br/>
+      <input type="radio" name="pet" id="dogs" value="dogs">
+      <label for="dogs">Dogs</label> <br/>
+      <input type="radio" name="pet" id="fish" value="fish">
+      <label for="fish">Fish</label> <br/>
+
+      <!--present multiple options, user can select multiple options-->
+      <!-- the name attributes for all checkbox options are different, along with value and id is also different-->
+      <p>Select more than one programming language...</p>
+      <input type="checkbox" name="python" id="python" value="python">
+      <label for="python">Python</label> <br/>
+      <input type="checkbox" name="java" id="java" value="java">
+      <label for="java">Java</label> <br/>
+      <input type="checkbox" name="js" id="js" value="js">
+      <label for="js">JS</label> <br/>
+
+      <br> <hr>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis consectetur itaque ex, ullam magnam corporis iure quae aperiam vitae temporibus nihil corrupti sint voluptas reprehenderit cumque non nulla accusantium?</div><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet blanditiis rerum repellendus accusamus atque hic, deleniti corrupti ducimus error reiciendis iusto, accusantium neque reprehenderit sequi deserunt excepturi eum quaerat?</div>
+      <br> <hr>
+
+      <!-- the select from multiple option input type-->
+      <!-- slect and choose-->
+      <label for="states">Choose your midwest state</label>
+      <select name="states" id="states">
+        <option value="">Select a state</option>
+        <option value="MI">Michigan</option>
+        <option value="IL">Illinois</option>
+        <option value="OH">Ohio</option>
+      </select>
+
+
+
+
+   </main> 
+
+  <footer>
+    this is footer
+  </footer>
+
+
+
+  </body>
+</html>
