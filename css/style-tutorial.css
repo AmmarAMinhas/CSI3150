@@ -2,12 +2,24 @@
     this is a comment in .css file
 */
 
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* how to declare and use css variables */
+    --primary-background-color: #DEF2C8;
+}
+
 body{
+    background-image: url("../assets/img/yas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: bisque;
 }
 
 #primary-heading{
-    color: blue;
+    color: var(--primary-background-color);
     border: 10px solid red;
     border-radius: 30px;
     padding: 15px;
@@ -15,13 +27,77 @@ body{
 }
 
 .heading-group{
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-*{
-    padding: 0;
-    margin: 0;
+/* tutorial for laying elements out on the html document
+replicating the news subsection on the oakland.edu website
+
+(root node of the section) */
+.new-events{
+
 }
+
+/*immediate child of root node*/
+.section-title{
+    padding: 10px;
+    margin-bottom: 20px;   /*separate next child vertically from this one*/ 
+    width: 100%; /*max-width, min-width. Same for height property*/
+}
+
+.section-title-text{
+    padding: 10px;
+    font-size: 24px;   /*em and rem are two other ways to size a font*/
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(216, 190, 56);
+}
+
+
+.media-wrapper{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;   /*space-around, space-between, space-evenly*/
+    align-items: center;
+    flex-wrap: wrap;  /*means things can go to next line if not space*/
+    /* flex-grow: and flex-shrink */
+}
+
+.news-container{
+    border: 1px solid rgb(142, 124, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-media{
+    padding: 15px;
+    margin-bottom: 45px;
+    width: 150px;
+    max-width: 100px;
+    height: 150px;
+    max-height: 100px;
+}
+
+.news-images{
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.news-text > a > h3 {
+    padding: 10px;
+    color: rgb(51, 49, 4);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+
+
 
 /*  input[type="checkbox"] {...}    */
 
@@ -65,5 +141,37 @@ How to center a div (html element):
 2.  display: flex;   (flexibility is controlled by the browser and how many elements are there)
     justify-content: center;     (controls horizontal aspect of layout/display)
     align-items: center;    (controls vertical aspect of layout/display)
-    flex-direction: rpw/ column/ row-reverse/ column-reverse;
+    flex-direction: row/ column/ row-reverse/ column-reverse;
+3.  display: grid    (grid is good when we want to lay things out in tabular form)
+    placed-items: center
+    grid-column-template: 
+*/
+
+/*Colors
+Hex code #xxxxxx
+RGB: RGB(151,35,250);       (each of the values range from o to 255) 
+*/
+
+
+
+/* PORTFOLIO
+
+1. Design of navbar:
+    navbar should be at top, the LHS of top will have logo, the RHS of top will have call-to-action, nav menu in middle, the LHS and RHS of nav menu will have drop down box and will have an icon to show the dropdown. The LHS's dropbox, if mouse hovers over it, should open another menu to its right.
+
+    Below the navbar, there is a HERO section that says:
+        -> who you are
+        -> how can you help
+        -> how are you capable of this job
+
+2. Clear visual cue to separate sections
+        -> color change for section
+    Every alternating section must have a different layout
+
+3. The home page must be a summary of entire website
+
+4. There must be a footer with a repeat of the nav menu and a CTA again
+
+5. Three-four different colors; no more than that
+
 */
